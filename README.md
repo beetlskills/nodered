@@ -1,4 +1,4 @@
-Import noderes.json into Node-RED.
+Import nodered.json into Node-RED.
 
 Required Files (must re-generate youself on AWS IoT Management Console)
 1. device certificate
