@@ -1,0 +1,229 @@
+[
+    {
+        "id": "d519e46d3cee9395",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2759fcc09a10021b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0099cc",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0099cc",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0099cc",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1ac6ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0099cc",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Monitoring System",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "738f132f.e4c5ec",
+        "type": "mqtt-broker",
+        "name": "AWS IoT",
+        "broker": "a3lnqpq9rex88v-ats.iot.ap-southeast-2.amazonaws.com",
+        "port": "443",
+        "tls": "f1b41ceec461b7a8",
+        "clientid": "nodered-microbot",
+        "autoConnect": true,
+        "usetls": true,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f1b41ceec461b7a8",
+        "type": "tls-config",
+        "name": "aws-iot2",
+        "cert": "C:\\Users\\SCSC\\davidk\\BeeTLSkills\\FYPs\\JunHeng\\nodered\\certs\\device_certificate\\285ff4b28a0ee3e6ef91f080c5e1a22078b1a997eca0643f9a844cf8fcf014d3-certificate.pem.crt",
+        "key": "C:\\Users\\SCSC\\davidk\\BeeTLSkills\\FYPs\\JunHeng\\nodered\\certs\\private_key\\285ff4b28a0ee3e6ef91f080c5e1a22078b1a997eca0643f9a844cf8fcf014d3-private.pem.key ",
+        "ca": "C:\\Users\\SCSC\\davidk\\BeeTLSkills\\FYPs\\JunHeng\\nodered\\certs\\rootCA\\AmazonRootCA1.pem",
+        "certname": "mything.crt",
+        "keyname": "mything-private.pem.key",
+        "caname": "AmazonRootCA1.pem",
+        "servername": "a3lnqpq9rex88v-ats.iot.ap-southeast-2.amazonaws.com",
+        "verifyservercert": false,
+        "alpnprotocol": "x-amzn-mqtt-ca"
+    },
+    {
+        "id": "a77a17132c8c4213",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8b9d1ad3cce75a18",
+        "type": "ui_group",
+        "name": "Count",
+        "tab": "a77a17132c8c4213",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f09d4f40bb6b28c9",
+        "type": "mqtt in",
+        "z": "d519e46d3cee9395",
+        "name": "",
+        "topic": "espeye/count",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "738f132f.e4c5ec",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "1c8ee376d053a97d",
+                "496fa49649cdcc62"
+            ]
+        ]
+    },
+    {
+        "id": "1c8ee376d053a97d",
+        "type": "debug",
+        "z": "d519e46d3cee9395",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "496fa49649cdcc62",
+        "type": "ui_template",
+        "z": "d519e46d3cee9395",
+        "group": "8b9d1ad3cce75a18",
+        "name": "",
+        "order": 1,
+        "width": 6,
+        "height": 2,
+        "format": "<div>\n    <h2>{{msg.payload.count}}</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 420,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    }
+]
