@@ -16,4 +16,4 @@ Setting up the Node-RED Flow
 1. Click on MQTT In node. Click on Server. Click on Use TLS.
 2. Specify the FULL local path of the three required files there. Then click Update and Done.
 3. Deploy the flow. 
-4. Run the ESP-EYE. Press the side tactile button. THe count will appear on the Node-RED dashboard.
+4. Run the ESP-EYE. Press the side tactile button. The count will appear on the Node-RED dashboard.
