@@ -3,3 +3,4 @@ certs/device_certificate
 certs/public_key
 certs/private_key
 certs/rootCA
+certs/device_certificate/285ff4b28a0ee3e6ef91f080c5e1a22078b1a997eca0643f9a844cf8fcf014d3-certificate.pem.crt
