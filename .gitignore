@@ -1,5 +1,5 @@
 certs
 certs/device_certificate
-certs/private_key
 certs/public_key
+certs/private_key
 certs/rootCA
